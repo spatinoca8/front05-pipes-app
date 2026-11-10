@@ -7,18 +7,18 @@
     <div class="stat">
         <div class="stat-title">Lowercase Pipe</div>
         <div class="stat-value">{{ nameupper() | lowercase }}</div>
-        <div class="stat-desc">Jan 1st - Feb 1st</div>
+        <div class="stat-desc">{{nameupper() }}</div>
     </div>
 
     <div class="stat">
-        <div class="stat-title">New Users</div>
-        <div class="stat-value">4,200</div>
-        <div class="stat-desc">↗︎ 400 (22%)</div>
+        <div class="stat-title">Uppercase Pipe</div>
+        <div class="stat-value">{{nameLower() | uppercase}}</div>
+        <div class="stat-desc">{{nameLower() }}</div>
     </div>
 
     <div class="stat">
-        <div class="stat-title">New Registers</div>
-        <div class="stat-value">1,200</div>
-        <div class="stat-desc">↘︎ 90 (14%)</div>
+        <div class="stat-title">Titlecase Pipe</div>
+        <div class="stat-value">{{fullname() | titlecase}}</div>
+        <div class="stat-desc">{{fullname() }}</div>
     </div>
 </div>

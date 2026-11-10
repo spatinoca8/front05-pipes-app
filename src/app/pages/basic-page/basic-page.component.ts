@@ -12,4 +12,6 @@ export default class BasicPageComponent {
  nameupper=signal('SILVIA');
  fullname=signal('siLVia PatIno');
 
+ customDate = signal(new Date());
+
 }
