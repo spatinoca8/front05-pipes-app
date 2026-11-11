@@ -22,3 +22,53 @@
         <div class="stat-desc">{{fullname() }}</div>
     </div>
 </div>
+<div class="divider">
+   
+</div>
+ <div class="stats stats-vertical lg:stats-horizontal shadow max-w-full">
+  <div class="stat">
+    <div class="stat-title">Fecha short</div>
+    <div class="stat-value">{{customDate() | date:'short' }}</div>
+    <div class="stat-desc">{{customDate()}}</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Fecha long</div>
+    <div class="stat-value">{{customDate() | date:'long' }}</div>
+    <div class="stat-desc">{{customDate()}}</div>
+  </div>
+</div>
+
+<div class="divider">
+</div>
+
+<div class="stats stats-vertical lg:stats-horizontal shadow max-w-full">
+  <div class="stat">
+    <div class="stat-title">Date pipe formato especifico solo fecha</div>
+    <div class="stat-value">{{customDate() | date :'dd/MM/yyyy' }}</div>
+    <div class="stat-desc">{{customDate()}}</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Date pipe formato especifico solo hora</div>
+    <div class="stat-value">{{customDate() | date:'HH:mm:ss' }}</div>
+    <div class="stat-desc">{{customDate()}}</div>
+  </div>
+ <div class="stat">
+    <div class="stat-title">Date dia de la semana y mes en palabras </div>
+    <div class="stat-value">{{customDate() | date:'EE d,MMM' }}</div>
+    <div class="stat-desc">{{customDate()}}</div>
+  </div>
+
+</div>
+<div class="divider">
+</div>
+<div class="flex flex-row gap-2">
+    <h1 class="text-2xl font-bold">
+        Locale Actual:
+        <span class="badge badge-secondary">{{ currentLocale() }}</span>
+    </h1>
+    <button (click)="chnageLocale('fr')" class="btn btn-primary">Cambiar a frances </button>
+    <button (click)="chnageLocale('en')" class="btn btn-primary">Cambiar a ingles </button>
+    <button (click)="chnageLocale('es')" class="btn btn-primary">Cambiar a español </button>
+</div>
